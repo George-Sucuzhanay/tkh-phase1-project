@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script defer src="script.js"></script>
+        <script src="searchName.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -24,7 +25,8 @@
                <img src="images/programmer.png" id="programmer"><div class="letter">
                <h1>Dear Programmer,</h1>
                <h2>Just Know You Got This!</h2>
-               <h3>"Your Job Search is Just as Important as How Motivated You Are"</h3>
+               <h3>Quote</h3>
+               <p id="inspiration-quote"></p>
            </div>
            </div>
            
@@ -32,9 +34,9 @@
        <div>
            <div>
                <h1>Enter Famous Person's Name</h1>
-                <form action="/action_page.php">
+                <form>
                     <input type="text" id="lname" name="lname"><br><br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="searchName(event)">
                 </form>
            </div>
            <div>
