@@ -1,7 +1,7 @@
 // using cors anywhere demo server
 // https://cors-anywhere.herokuapp.com/
 // need to enable it first by going to the link above
-// const url = 'https://cors-anywhere.herokuapp.com/https://www.affirmations.dev';
+const url = 'https://cors-anywhere.herokuapp.com/https://www.affirmations.dev';
 var headers = {}
 // The fetch() method returns a promise. If the promise returned is resolve, the function within the then() method is executed. That function contains the code for handling the data received from the API.
 fetch(url, {
