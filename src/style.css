@@ -5,14 +5,14 @@ body{
 
 .header {
     list-style-type: none;
-    margin: 0;
+    margin: 0px 0px 80px 0px;
     padding: 0;
     overflow: hidden;
     background-color: #3F2734;
 }
 
 li {
-    display: inline-flex;
+    display: inline-block;
 }
 
 li a {
@@ -23,10 +23,10 @@ li a {
     text-decoration: none;
 }
 .logo{
-  text-align: right;
-  justify-content: right;
+  margin: 0px 10px 0 30em ;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
+  color: white;
 }
   
   /* Change the link color to light muave on hover */
@@ -40,6 +40,7 @@ li a:hover {
   justify-content: left;
   width: 250px;
   height: 250px;
+  
   
   
 
@@ -101,4 +102,27 @@ li a:hover {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display:block;
+}
+
+#inspiration-quote {
+
+  background-color: #24947F;
+  border: none;
+  padding: 10px;
+  border-radius: 2em;
+  text-align: center;
+  color: #3F2734;
+  overflow: hidden;
+  animation: quote 1s ease 0s 1 normal both;
+}
+@keyframes quote {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
