@@ -27,36 +27,59 @@
                <h1>Dear Programmer,</h1>
                <h2>Just Know You Got This!</h2>
                <h3>Quote</h3>
-               <p id="inspiration-quote"></p>
            </div>
            </div>
            
        </div>
-       <div>
-           <div>
+       <div class="flex-container">
+           <div class="flex-child" id="choices">
                <h1>Enter Famous Person's Name</h1>
                 <form>
                     <input type="text" id="lname" name="lname"><br><br>
                     <input type="submit" value="Submit" onclick="searchName(event)">
                 </form>
            </div>
-           <div>
-            <h1>Enter Famous Person's Name</h1>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    </div>
-                </div>
+           <div class="flex-child" id="choices">
+            <h1>Pick A Famous Person's Name</h1>
+                <form name="form1" id="form1" action="/action_page.php">
+                        <select name="subject" id="subject">
+                        <option value="" selected="selected">Pick Here</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Submit">  
+                    </form>
             </div>
        </div>
-       <div>
+       <div class="button-div">
            <button type="button">Random Affirmation</button>
        </div>
-       <div>
-           <h1>Examaple</h1>
+       <div class="output-div">
+           <h1>Output:</h1>
+           <p id="inspiration-quote"></p>
+       </div>
+       
+       <h1 class="about-us">About Us</h1>
+
+       <div class="about-div">
+           <br><br><br>
+           <div class="about-child">
+            <img src="images/programmer.png" id="programmer">
+           </div>
+           <div class="about-child">
+               <h2>George</h2>
+           </div>
+           <div class="about-child">
+            <img src="images/programmer.png" id="programmer">
+           </div>
+           <div class="about-child">
+               <h2>Brandon</h2>
+           </div>
+       </div>
+       <div class="semi-footer">
+        <h1>Testing</h1>
+       </div>
+       <div class="footer">
+           <h2>This website is designed and developed by George Sucuzhanay and Brandon Turner: <a id="github" href="https://github.com/George-Sucuzhanay/tkh-phase1-project" target="_blank">View it on Github</a></h2>
        </div>
     </body>
 </html>

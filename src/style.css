@@ -103,6 +103,7 @@ li a:hover {
 .show {
     display:block;
 }
+<<<<<<< HEAD
 
 #inspiration-quote {
 
@@ -125,4 +126,94 @@ li a:hover {
     opacity: 1;
     transform: translateX(0);
   }
+=======
+#choices {
+  background-color: #b1ede8;
+}
+.flex-container{
+  display: flex;
+  padding: 30px;
+  height: 180px;
+
+}
+.flex-child {
+  flex: 1;
+  border-radius: 25px;
+  text-align: center;
+
+  
+}
+.flex-child:first-child {
+  margin-right: 20px;
+  border-radius: 25px;
+
+} 
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.button-div button {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #ebd6ff;
+  border-radius: 25px;
+
+}
+.output-div {
+  margin: 30px;
+  padding: 20px;
+  height: 200px;
+  text-align: center;
+  background-color: #ebd6ff;
+  border-radius: 25px;
+}
+.about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.about-div{
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #24947f;
+  display: flex;
+}
+.about-child{
+  background-color: #b1ede8;
+  margin: 30px;
+  padding: 20px;
+  flex: 1;
+  border-radius: 25px;
+  text-align: center;
+}
+.semi-footer{
+  background-color: #985d7c;
+  width: auto;
+  display: flex;
+  color:#985d7c;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+.footer{
+  background-color: #3f2734;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color:white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#github{
+  color:white;
+>>>>>>> 7cc2e1c... created main div and footer
 }
