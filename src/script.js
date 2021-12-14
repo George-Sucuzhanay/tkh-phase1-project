@@ -2,22 +2,28 @@
 // https://cors-anywhere.herokuapp.com/
 // need to enable it first by going to the link above
 const url = 'https://cors-anywhere.herokuapp.com/https://www.affirmations.dev';
-var headers = {}
+let headers = {}
+const ranButton = document.getElementById("randomButton");
+
+ranButton.addEventListener("click", function(event){
+event.preventDefault();
 // The fetch() method returns a promise. If the promise returned is resolve, the function within the then() method is executed. That function contains the code for handling the data received from the API.
-fetch(url, {
-  headers: {
-    Accept: "application/json"
-  }
+  fetch(url, {
+    headers: {
+      Accept: "application/json"
+    }
+  })
+  .then((resp) => resp.json())
+  .then(result => {
+      const { affirmation } = result
+      const pTag = document.getElementById("inspiration-quote")
+      pTag.innerText = affirmation
+  })
+  .catch(function(error) {
+      console.error("Error Retrieving", error)
+  });
 })
-.then((resp) => resp.json())
-.then(result => {
-    const { affirmation } = result
-    const pTag = document.getElementById("inspiration-quote")
-    pTag.innerText = affirmation
-})
-.catch(function(error) {
-    console.error("Error Retrieving", error)
-});
+
 
 // api calls
 // https://www.affirmations.dev/ => return random affirmations
