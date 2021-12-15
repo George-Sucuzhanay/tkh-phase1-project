@@ -3,18 +3,45 @@ body{
   background-color: #FFEBD6;
 }
 
+
+#support{
+  margin-left: 1020px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ebd6ff;
+  border-radius: 25px;
+  align-items: flex-end;
+  
+
+}
 .header {
     list-style-type: none;
     margin: 0px 0px 80px 0px;
     padding: 0;
+    height:160px;
     overflow: hidden;
-    background-color: #3F2734;
+    display: flex;
+    background-color: #684356;
 }
-
+#intro{
+  font-size: 40px;
+}
+#intro2{
+  font-size: 35px;
+}
+#intro3{
+  font-size: 25px;
+}
 li {
     display: inline-block;
 }
-
+img#testing{
+  width: 40%;
+}
+#testing{
+  width: 30%;
+  align-items: center;
+}
 li a {
     display: block;
     color: white;
@@ -23,7 +50,6 @@ li a {
     text-decoration: none;
 }
 .logo{
-  margin: 0px 10px 0 30em ;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 22px;
   color: white;
@@ -38,8 +64,8 @@ li a:hover {
 
   display: inline-block;
   justify-content: left;
-  width: 250px;
-  height: 250px;
+  width: 50%;;
+  height: 120%;
   
   
   
@@ -55,54 +81,7 @@ li a:hover {
   
 }
 
-  /* Dropdown Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display:block;
-}
 
 #inspiration-quote {
 
