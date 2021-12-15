@@ -5,6 +5,7 @@ let inputVal = "";
 if (queryButton) {
     inputVal = queryButton.value;
 }
+// comment testing
 const urlWithQuery = `https://cors-anywhere.herokuapp.com/https://api.fisenko.net/v1/authors/en?query="${query}"&limit=50&offset=0 `
 
 queryButton.addEventListener("click", function(event){
